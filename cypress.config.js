@@ -1,20 +1,20 @@
-const { defineConfig } = require("Cypress");
-const fs = require('fs-extra');
-const path = require('path');
-const cucumber = require('cypress-cucumber-preprocessor').default;
+import { defineConfig } from "Cypress";
+import { existsSync, readJson } from 'fs-extra';
+import { resolve } from 'path';
+import cucumber from 'cypress-cucumber-preprocessor';
 
 function getConfigurationByFile(file) {
-  const pathToConfigFile = path.resolve('cypress\\config', `${file}.json`);
+  const pathToConfigFile = resolve('cypress\\config', `${file}.json`);
 
-  if(!fs.existsSync(pathToConfigFile)) {
+  if(!existsSync(pathToConfigFile)) {
     console.log("No custom config file found.");
     return {};
   }
 
-  return fs.readJson(pathToConfigFile);
+  return readJson(pathToConfigFile);
 }
 
-module.exports = defineConfig({
+export default defineConfig({
   projectId: 'mevvq9',
   reporter: 'cypress-mochawesome-reporter',
   "reporterOptions": {
