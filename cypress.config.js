@@ -22,6 +22,7 @@ export default defineConfig({
     "configFile": "reporter-config.json"
   },
   e2e: {
+    supportFile: 'cypress/support/e2e.js',
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
@@ -37,13 +38,11 @@ export default defineConfig({
     //excludeSpecPattern: "cypress/e2e/other/*.js",
     //baseUrl: "http://www.webdriveruniversity.com",
     chromeWebSecurity: false,
-    experimentalSessionAndOrigin: true,
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 120000,
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     video: false,
-    videoUploadOnPasses: false,
     viewportHeight: 1080,
     viewportWidth: 1920,
     reporter: 'cypress-multi-reporters',
