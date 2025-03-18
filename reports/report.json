@@ -1,0 +1,840 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 23,
+    "passes": 14,
+    "pending": 0,
+    "failures": 9,
+    "testsRegistered": 23,
+    "passPercent": 60.869565217391305,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-03-13T19:42:05.845Z",
+    "end": "2025-03-16T19:55:29.472Z",
+    "duration": 260003627
+  },
+  "results": [
+    {
+      "uuid": "51f3b014-f5c7-42be-8290-132a46cd2264",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dbe31399-0a96-4be4-9a4e-9f891a80e429",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successful login with valid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Successful login with valid credentials",
+              "timedOut": null,
+              "duration": 5505,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0deabfac-dfa4-4290-b5b7-aa89f5689c2f",
+              "parentUUID": "dbe31399-0a96-4be4-9a4e-9f891a80e429",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessful login with invalid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Unsuccessful login with invalid credentials",
+              "timedOut": null,
+              "duration": 1499,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReferenceError: data is not defined",
+                "estack": "ReferenceError: data is not defined\n    at Context.eval (cypress/support/step_definitions/accountPageSteps.js:20:36)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "d3340403-677a-4f47-8d02-bc6cf2033578",
+              "parentUUID": "dbe31399-0a96-4be4-9a4e-9f891a80e429",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0deabfac-dfa4-4290-b5b7-aa89f5689c2f"
+          ],
+          "failures": [
+            "d3340403-677a-4f47-8d02-bc6cf2033578"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7004,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "58bb1d32-4ed5-4d77-9873-84afe6514064",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5d7a6ff-e68e-4799-b713-cc6bee11ebe8",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successful login with valid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Successful login with valid credentials",
+              "timedOut": null,
+              "duration": 4811,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "aa24aff9-b255-4d5e-b1d1-88c8d439d1fe",
+              "parentUUID": "e5d7a6ff-e68e-4799-b713-cc6bee11ebe8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessful login with invalid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Unsuccessful login with invalid credentials",
+              "timedOut": null,
+              "duration": 1214,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReferenceError: data is not defined",
+                "estack": "ReferenceError: data is not defined\n    at Context.eval (cypress/support/step_definitions/accountPageSteps.js:20:36)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "093fdd93-3888-4811-86a3-dbce0bfb7b50",
+              "parentUUID": "e5d7a6ff-e68e-4799-b713-cc6bee11ebe8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa24aff9-b255-4d5e-b1d1-88c8d439d1fe"
+          ],
+          "failures": [
+            "093fdd93-3888-4811-86a3-dbce0bfb7b50"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6025,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9c0cdf6e-ebb8-4dfb-af4c-642745e1ac69",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "07efcc66-7331-4139-9b97-5c4097d4e534",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successful login with valid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Successful login with valid credentials",
+              "timedOut": null,
+              "duration": 4842,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a1bc5814-2a3a-4f4b-b149-7813a63ba633",
+              "parentUUID": "07efcc66-7331-4139-9b97-5c4097d4e534",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessful login with invalid credentials",
+              "fullTitle": "Verify login functionality on Automation Test Store Unsuccessful login with invalid credentials",
+              "timedOut": null,
+              "duration": 1350,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReferenceError: data is not defined",
+                "estack": "ReferenceError: data is not defined\n    at Context.eval (cypress/support/step_definitions/accountPageSteps.js:20:36)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "b1e61bf3-e1ea-482b-a4c0-aa5b1a155c27",
+              "parentUUID": "07efcc66-7331-4139-9b97-5c4097d4e534",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1bc5814-2a3a-4f4b-b149-7813a63ba633"
+          ],
+          "failures": [
+            "b1e61bf3-e1ea-482b-a4c0-aa5b1a155c27"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1cc8aca4-af16-474d-830d-42cded21c44d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 6212,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5f5dc9dd-538f-4bed-bd9e-cde4f1cfcffb",
+              "parentUUID": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #2)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #2)",
+              "timedOut": null,
+              "duration": 2992,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "80685b99-3421-4433-8f11-a7590ff2afd8",
+              "parentUUID": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #3)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #3)",
+              "timedOut": null,
+              "duration": 12691,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:24:19)",
+                "diff": null
+              },
+              "uuid": "4f60879e-6e6a-4e3a-b736-5b6376c101d9",
+              "parentUUID": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #4)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #4)",
+              "timedOut": null,
+              "duration": 13959,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:24:19)",
+                "diff": null
+              },
+              "uuid": "a39335af-6ddd-4077-8e04-8c9afdfba8be",
+              "parentUUID": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #5)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #5)",
+              "timedOut": null,
+              "duration": 4809,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5677a168-25c2-4db5-8832-98a13859a823",
+              "parentUUID": "7dae7c69-df74-452b-a33f-c0bf06dbf720",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5f5dc9dd-538f-4bed-bd9e-cde4f1cfcffb",
+            "80685b99-3421-4433-8f11-a7590ff2afd8",
+            "5677a168-25c2-4db5-8832-98a13859a823"
+          ],
+          "failures": [
+            "4f60879e-6e6a-4e3a-b736-5b6376c101d9",
+            "a39335af-6ddd-4077-8e04-8c9afdfba8be"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 40663,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7b0efbe3-2f0f-473a-b341-2e286856022b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 5460,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7f3810b6-8525-4d65-8f10-4cbacbab47c5",
+              "parentUUID": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #2)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #2)",
+              "timedOut": null,
+              "duration": 2329,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cf5682d3-6083-4af8-ad73-785703d806e6",
+              "parentUUID": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #3)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #3)",
+              "timedOut": null,
+              "duration": 14508,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:25:19)",
+                "diff": null
+              },
+              "uuid": "a63b1903-e112-4807-8df2-31db3eb667d9",
+              "parentUUID": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #4)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #4)",
+              "timedOut": null,
+              "duration": 15855,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:25:19)",
+                "diff": null
+              },
+              "uuid": "a2fe97f1-acc9-467f-8c03-a14e1eeecbf7",
+              "parentUUID": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #5)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #5)",
+              "timedOut": null,
+              "duration": 3306,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7d66f348-7662-4370-a8e1-9d04274c5c0a",
+              "parentUUID": "2d9d2665-1aab-4164-bd5c-feca3ded0b3b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7f3810b6-8525-4d65-8f10-4cbacbab47c5",
+            "cf5682d3-6083-4af8-ad73-785703d806e6",
+            "7d66f348-7662-4370-a8e1-9d04274c5c0a"
+          ],
+          "failures": [
+            "a63b1903-e112-4807-8df2-31db3eb667d9",
+            "a2fe97f1-acc9-467f-8c03-a14e1eeecbf7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 41458,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e8469175-0ef3-4e19-a0eb-17176f6ca400",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 4605,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "3724b1f1-a7da-464a-ab2c-40d819253a50",
+              "parentUUID": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #2)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #2)",
+              "timedOut": null,
+              "duration": 2291,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "99374b73-b57a-4185-970a-8b31d6e39c1a",
+              "parentUUID": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #3)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #3)",
+              "timedOut": null,
+              "duration": 4497,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 0ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 0ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:25:19)",
+                "diff": null
+              },
+              "uuid": "2b43360c-d3ce-4a69-9cd2-b21c53cdef51",
+              "parentUUID": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #4)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #4)",
+              "timedOut": null,
+              "duration": 5216,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 0ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 0ms: Expected to find element: `.sub_menu dropdown-menu`, but never found it.\n    at Context.eval (cypress/e2e/pageObjects/homeObjects/homePage.js:25:19)",
+                "diff": null
+              },
+              "uuid": "2811df36-b2f9-43dd-bf9d-87d556c2f646",
+              "parentUUID": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #5)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #5)",
+              "timedOut": null,
+              "duration": 2377,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "8785924d-1236-44da-ab59-6b8fdc714c1a",
+              "parentUUID": "d5fdaa71-0cae-4f9e-9c95-0d76753e4024",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3724b1f1-a7da-464a-ab2c-40d819253a50",
+            "99374b73-b57a-4185-970a-8b31d6e39c1a",
+            "8785924d-1236-44da-ab59-6b8fdc714c1a"
+          ],
+          "failures": [
+            "2b43360c-d3ce-4a69-9cd2-b21c53cdef51",
+            "2811df36-b2f9-43dd-bf9d-87d556c2f646"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18986,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6038b90b-fdd9-41ea-a37b-822b119e03e3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce112cff-29ec-4a7f-bcb8-9a7963575890",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 4816,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7b48f2cd-3f07-492f-8e9a-92aed0824377",
+              "parentUUID": "ce112cff-29ec-4a7f-bcb8-9a7963575890",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b48f2cd-3f07-492f-8e9a-92aed0824377"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4816,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3a930039-abb0-4f54-a2a1-af9de91ee4fb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45f643a1-dff7-4511-a725-c998a557b359",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 4792,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a0d67502-00e5-4fc6-a70c-4a43377ca7c0",
+              "parentUUID": "45f643a1-dff7-4511-a725-c998a557b359",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0d67502-00e5-4fc6-a70c-4a43377ca7c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

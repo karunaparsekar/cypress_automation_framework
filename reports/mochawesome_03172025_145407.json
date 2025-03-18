@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-03-17T18:53:51.598Z",
+    "end": "2025-03-17T18:54:07.934Z",
+    "duration": 16336,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0af62bcc-559f-4446-a3e0-431c85183394",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "file": "cypress\\e2e\\features\\homeFeatures\\MainMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+          "title": "Verify login functionality on Automation Test Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #1)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #1)",
+              "timedOut": null,
+              "duration": 5700,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cc0f8f9f-eb20-4fa4-acdf-62bf9239e2bb",
+              "parentUUID": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #2)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #2)",
+              "timedOut": null,
+              "duration": 2719,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "29fbb0ad-f66c-4617-bedd-db7adeb9876c",
+              "parentUUID": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #3)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #3)",
+              "timedOut": null,
+              "duration": 2599,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "06c78a09-d5e9-43ba-af15-625a89480c33",
+              "parentUUID": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #4)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #4)",
+              "timedOut": null,
+              "duration": 2456,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0615c2e8-a3a1-4ffa-b481-d9e198142ab3",
+              "parentUUID": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scenario Outline name: Successful login with valid credentials (example #5)",
+              "fullTitle": "Verify login functionality on Automation Test Store Scenario Outline name: Successful login with valid credentials (example #5)",
+              "timedOut": null,
+              "duration": 2524,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "8373cfb3-f30f-4bda-844d-b0608fd682c0",
+              "parentUUID": "f8420d63-0f64-41fc-923c-e630df7bb8d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cc0f8f9f-eb20-4fa4-acdf-62bf9239e2bb",
+            "29fbb0ad-f66c-4617-bedd-db7adeb9876c",
+            "06c78a09-d5e9-43ba-af15-625a89480c33",
+            "0615c2e8-a3a1-4ffa-b481-d9e198142ab3",
+            "8373cfb3-f30f-4bda-844d-b0608fd682c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15998,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
