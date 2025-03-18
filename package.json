@@ -4,22 +4,26 @@
   "description": "Cypress Automation Framework",
   "main": "index.js",
   "scripts": {
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "triggerAllTests-MainMenu": "npx cypress run --spec cypress/e2e/features/homeFeatures/MainMenu.feature",
+    "triggerAllTests-Login": "npx cypress run --spec cypress/e2e/features/homeFeatures/Login.feature",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Karuna Parsekar",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
-    "chai": "^5.2.0",
     "cypress": "^13.17.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-mochawesome-reporter": "^3.8.2",
-    "cypress-multi-reporters": "^2.0.5",
-    "esbuild": "^0.25.1",
-    "mochawesome-merge": "^4.4.1"
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "cypress-multi-reporters": "^1.4.0"
   },
-  "dependencies": {
-    "uuid": "^11.1.0"
-  }
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions/**/*.{js,ts}"
+  },
+
+   "type": "module"
 }
