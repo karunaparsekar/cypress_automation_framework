@@ -1,5 +1,6 @@
 import { defineConfig } from "Cypress";
-import { existsSync, readJson } from 'fs-extra';
+import fsExtra from 'fs-extra';
+const { existsSync, readJson } = fsExtra;
 import { resolve } from 'path';
 import cucumber from 'cypress-cucumber-preprocessor';
 
