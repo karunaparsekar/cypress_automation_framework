@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.17.0",
-    "cypress-cucumber-preprocessor": "^4.3.1",
+    "@badeball/cypress-cucumber-preprocessor":  "^4.3.1",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
     "mochawesome-report-generator": "^5.1.0",
@@ -22,8 +22,8 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/support/step_definitions/**/*.{js,ts}"
+    "stepDefinitions": "cypress/support/step_definitions/**/*.{js,ts}",
+    "compiler": "js:babel-register"
   },
-
-   "type": "module"
+  "type": "module"
 }

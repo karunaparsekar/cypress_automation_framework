@@ -1,13 +1,15 @@
-import { defineConfig } from "Cypress";
+import { defineConfig } from "cypress";
 import fsExtra from 'fs-extra';
-const { existsSync, readJson } = fsExtra;
 import { resolve } from 'path';
-import cucumber from 'cypress-cucumber-preprocessor';
+import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
+import preprocessor from "@badeball/cypress-cucumber-preprocessor";
+
+const { existsSync, readJson } = fsExtra;
 
 function getConfigurationByFile(file) {
-  const pathToConfigFile = resolve('cypress\\config', `${file}.json`);
+  const pathToConfigFile = resolve('cypress/config', `${file}.json`);
 
-  if(!existsSync(pathToConfigFile)) {
+  if (!existsSync(pathToConfigFile)) {
     console.log("No custom config file found.");
     return {};
   }
@@ -18,25 +20,27 @@ function getConfigurationByFile(file) {
 export default defineConfig({
   projectId: 'mevvq9',
   reporter: 'cypress-mochawesome-reporter',
-  "reporterOptions": {
-    "configFile": "reporter-config.json"
+  reporterOptions: {
+    configFile: "reporter-config.json"
   },
   e2e: {
     supportFile: 'cypress/support/e2e.js',
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
-    setupNodeEvents(on, config) {
-      on('file:preprocessor', cucumber())
+    setupNodeEvents: async (on, config) => { 
+     
+      //await preprocessor.addCucumberPreprocessorPlugin(on, config);
+      await require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin(on, config);
+
+      on("file:preprocessor", createEsbuildPlugin(config));
+
       require('cypress-mochawesome-reporter/plugin')(on);
 
-      // implement node event listeners here
-      const file = config.env.configFile || ''
+      // Implement Node Event Listeners
+      const file = config.env.configFile || '';
 
-      return getConfigurationByFile(file)
+      return getConfigurationByFile(file);
     },
     baseUrl: 'https://automationteststore.com',
-    
-    //excludeSpecPattern: "cypress/e2e/other/*.js",
-    //baseUrl: "http://www.webdriveruniversity.com",
     chromeWebSecurity: false,
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 120000,
@@ -53,6 +57,5 @@ export default defineConfig({
       runMode: 0,
       openMode: 0
     },
-    
   },
 });
